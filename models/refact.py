@@ -1,7 +1,7 @@
 import pandas as pd
 import math
 
-def replace_sex(sex):
+def replace_sex_data(sex):
     if (sex == 'm'):
         return 0
     return 1
@@ -16,7 +16,7 @@ def replace_nan(value):
 def refact_dataset(input, output):
     hepatite = pd.read_csv(input)
 
-    hepatite["Sex"] = hepatite["Sex"].apply(replace_sex)
+    hepatite["Sex"] = hepatite["Sex"].apply(replace_sex_data)
     for category in hepatite:
         hepatite[category] = hepatite[category].apply(replace_nan)
 

@@ -1,5 +1,5 @@
 {
-    "refactoredFilename": "hepatiteRefactored.csv",
+    "refactoredFilename": "refactoredDataset.csv",
     "datasetFilename": "hcvdat0.csv",
     "datasetPath": "./data/"
 }
